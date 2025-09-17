@@ -1,7 +1,7 @@
 # Como usar este proyecto
 1. **git clone https://github.com/AndresRestrepoDev/clasesTsNodeJs.git**
-2. **npm i para descargar todas las dependencias necesarias**
-3. **crear .env y agregar las siguinetes variables de entorno:**
+2. **npm i** para descargar todas las dependencias necesarias
+3. crear **.env** y agregar las siguinetes variables de entorno:
   - PORT = 3002
   - CLIENT_URL=http://127.0.0.1:5500
 
