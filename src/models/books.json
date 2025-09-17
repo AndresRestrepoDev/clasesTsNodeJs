@@ -3,7 +3,7 @@
     "id": "1",
     "author": "Gabriel García Márquez",
     "name": "Cien años de soledad",
-    "ouwner": "Andrea"
+    "ouwner": "Santiago"
   },
   {
     "id": "2",
@@ -12,9 +12,21 @@
     "ouwner": "Carlos"
   },
   {
-    "id": "3",
-    "author": "Jorge Luis Borges",
-    "name": "Ficciones",
-    "ouwner": "Sofía"
+    "id": "4",
+    "name": "Clean Code",
+    "author": "Robert C. Martin",
+    "owner": "Andres"
+  },
+  {
+    "id": "5",
+    "name": "El hombre mas rico de babilonea",
+    "author": "Samir yors",
+    "owner": "Diego"
+  },
+  {
+    "id": "6",
+    "name": "piense y hagase rico",
+    "author": "Napoleon Hill",
+    "owner": "Pipe"
   }
 ]

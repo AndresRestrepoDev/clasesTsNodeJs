@@ -1,6 +1,5 @@
 import { promises as fs } from 'fs';
 import type { IBook } from '../interfaces/book.interface.ts';
-import { v4 as uuid } from "uuid"; // para generar el id único
 
 import { fileURLToPath } from 'url';
 import { dirname, join } from 'path';
@@ -32,7 +31,7 @@ const createBookService = async (bookData: Omit<IBook, 'id'>): Promise<IBook> =>
     }
 
     const newBook: IBook = {
-        id: uuid(),
+        id: (books.length + 1).toString(), // Simple ID generation
         ...bookData,
     };
 
