@@ -19,7 +19,7 @@ function sendEmailLogs() {
 
   const mailOptions = {
   from: process.env.MAIL_USER,
-  to: "restreporamirezandresfelipe@gmail.com",
+  to: "correo al que quieres que lleguen los logs", // <----------
   subject: "📊 Reporte de Logs - CronJob",
   html: `
     <h2>Hola Andres 👋</h2>
