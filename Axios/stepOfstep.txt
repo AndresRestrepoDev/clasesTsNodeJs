@@ -1,0 +1,28 @@
+node -v  -> validar version de nodeJS
+npm -v  ->Validar version de npm
+npm init -y -> para inicializar un proyecto en nodeJS
+npm install -D typescript -> instalar ts como dependencia de desarrollo ya que en produccion no se necesita
+npx tsc --init -> archivo de configuracion tsconfig.json para decirle a ts como debe traspilar el codigo a json
+npm install --save-dev @types/node -> instalar las definiciones de tipos de Node.js para TypeScript
+
+despues de crear nuestro tsconfig.json descomentariamos la linea "rootDir": "./src", lo cual indica que nuestro codigo fuente se va a guardar en la carpeta src
+
+tenemos dos formas de ejecutar un archivo typescript:
+1: ts -> js y ejecutarlo (produccion)  primero usamos "npx tsc" para traspilar todo el codigo ts de src carpeta donde se guarda el codigo fuente despues usando "node src/index.js" para ejecutar el js resultante de la traspilacion
+2: directamente ejecutar ts (desarrollo) :
+npm install -D ts-node typescript ->instala ts-node para interpretar ts 
+npx ts-node src/index.ts -> para ejecutar
+npm install -D tsx typescript -> tsx es más rápido y moderno que ts-node
+npx tsx src/index.ts -> para ejecutar
+
+volviendo a nuestro package.json despues de la linea "main": "index.js", agrega   "type": "module",
+
+Tanto Fetch como Axios se usan en desarrollo web para hacer solicitudes HTTP (como GET, POST) al servidor y recibir datos, pero Fetch es una API nativa del navegador más simple para tareas básicas, mientras que Axios es una biblioteca externa más completa con características avanzadas como el manejo de errores integrado, transformación automática de datos JSON y la capacidad de usar interceptores para tareas globales como la autenticación. <<<En este caso usaremos axios>>>
+
+npm install axios -> instalar la libreria de axios usando npm
+axios no se instalo como dependencia de desarrollo ya que esta si se re requiere para que el proyecto funcione conrrectamente en produccion
+
+URL significa Uniform Resource Locator.  es básicamente la dirección de un recurso en la web. Es como la dirección de tu casa, pero para una página web o, en nuestro caso, para un "punto final" de una API. Le dice a nuestro programa dónde tiene que ir para obtener la información que queremos.
+
+
+
